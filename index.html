@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-1.7.2.js"></script>
+    <script src="jquery.params.js"></script>
+    <title>Title</title>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                people = $("#people").val();
+                start_time = $("#start_time").val();
+                end_time = $("#end_time").val();
+                type = $("#type").val();
+                shuoming = $("#shuoming").val();
+                mudi = $("#mudi").val();
+                fanwei = $("#fanwei").val();
+                app_time01 = $("#app_time01").val();
+                app_time02 = $("#app_time02").val();
+                app_time03 = $("#app_time03").val();
+                jump1();
+            });
+        });
+        function jump1(){
+            url = "result.html?people="+people+"&start_time="+start_time+"&end_time="+end_time+"&type="+type+"&shuoming="+shuoming+"&mudi="+mudi+
+                "&fanwei="+fanwei+"&app_time="+app_time01+"&app_time="+app_time02+"&app_time="+app_time03;
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+        申请人:<input type="text" name="people" id="people"><br>
+        开始时间:<input type="text" name="start_time" id="start_time"><br>
+        截至时间:<input type="text" name="end_time" id="end_time"><br>
+        请假类型:<select name="type" id="type">
+        <option value="事假" selected>事假</option>
+        <option value="病假">病假</option>
+        <option value="其他">其他</option>
+    </select><br>
+        事由说明:<textarea name="shuoming" id="shuoming"></textarea><br>
+        行程范围:<select name="fanwei" id="fanwei">
+        <option value="西安市内" selected>西安市内</option>
+        <option value="校内">校内</option>
+        <option value="西安市外">西安市外</option>
+    </select><br>
+        前往目的地:<input type="text" name="mudi" id="mudi"><br>
+    申请时间:<input type="text" name="app_time" id="app_time01"><br>
+    第一审核时间:<input type="text" name="app_time" id="app_time02"><br>
+    第二审核时间:<input type="text" name="app_time" id="app_time03"><br>
+    <button type="button" id="btn">提交</button>
+
+</div>
+
+</body>
+</head>
+<body>
+
+</body>
+</html>

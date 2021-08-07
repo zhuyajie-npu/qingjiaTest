@@ -18,12 +18,13 @@
                 app_time01 = $("#app_time01").val();
                 app_time02 = $("#app_time02").val();
                 app_time03 = $("#app_time03").val();
+                hours = $("#hours").val();
                 jump1();
             });
         });
         function jump1(){
             url = "result.html?people="+people+"&start_time="+start_time+"&end_time="+end_time+"&type="+type+"&shuoming="+shuoming+"&mudi="+mudi+
-                "&fanwei="+fanwei+"&app_time="+app_time01+"&app_time="+app_time02+"&app_time="+app_time03;
+                "&fanwei="+fanwei+"&app_time01="+app_time01+"&app_time02="+app_time02+"&app_time03="+app_time03+"&hours="+hours;
             window.location.href = url;
         }
     </script>
@@ -33,6 +34,7 @@
         申请人:<input type="text" name="people" id="people"><br>
         开始时间:<input type="text" name="start_time" id="start_time"><br>
         截至时间:<input type="text" name="end_time" id="end_time"><br>
+        时长:<input type="text" name="hours" id="hours"><br>
         请假类型:<select name="type" id="type">
         <option value="事假" selected>事假</option>
         <option value="病假">病假</option>

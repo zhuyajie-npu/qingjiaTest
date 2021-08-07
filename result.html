@@ -27,7 +27,10 @@
         var shuoming = $.query.get("shuoming");
         var mudi = $.query.get("mudi");
         var fanwei = $.query.get("fanwei");
-        var app_time = $.query.get("app_time");
+        var app_time01 = $.query.get("app_time01");
+        var app_time02 = $.query.get("app_time02");
+        var app_time03 = $.query.get("app_time03");
+        var hours = $.query.get("hours");
 
         $("#people").text(people);
         $("#midName").text(midName);
@@ -38,9 +41,10 @@
         $("#shuoming").text(shuoming);
         $("#mudi").text(mudi);
         $("#fanwei").text(fanwei);
-        $("#app_time01").text(app_time);
-        $("#app_time02").text(app_time);
-        $("#app_time03").text(app_time);
+        $("#app_time01").text(app_time01);
+        $("#app_time02").text(app_time02);
+        $("#app_time03").text(app_time03);
+        $("#hours").text(hours);
       }
     </script>
 
@@ -138,7 +142,7 @@
             </div>
             <div class="item">
               <span class="title">请假时长</span>
-              <span id="qjsxs">24小时</span>
+              <span id="hours"></span>
             </div>
           </div>
           <div class="box">
@@ -160,7 +164,7 @@
           <div class="box">
             <span class="title">事由说明</span>
             <p class="infocontent" id="shuoming">
-              修电脑
+
             </p>
           </div>
 <!--          <div class="box">-->
